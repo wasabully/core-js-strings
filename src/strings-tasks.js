@@ -280,9 +280,15 @@ function formatTime(minutes, seconds) {
  *   reverseString('abcdef') => 'fedcba'
  *   reverseString('12345') => '54321'
  */
-function reverseString(/* str */) {
-  throw new Error('Not implemented');
+function reverseString(str) {
+  const strSplit = str.split('');
+  console.log(strSplit);
+  const strRev = strSplit.reverse();
+  console.log(strRev);
+  const result = strRev.join('');
+  return result;
 }
+// console.log(reverseString('abcdef'));
 
 /**
  * Returns a string with characters in alphabetical order.
